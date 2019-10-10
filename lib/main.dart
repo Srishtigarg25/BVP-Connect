@@ -26,7 +26,7 @@ class BaseApp extends StatelessWidget {
         title: Container(
           width: double.infinity,
           child: Text(
-            "Welcome to BVP",
+            "Welcome to BVP Connect",
             textAlign: TextAlign.center,
           ),
         ),
