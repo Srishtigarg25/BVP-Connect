@@ -1,16 +1,7 @@
 import 'package:flutter/material.dart';
-class FacultyRoute extends StatefulWidget{
-  @override
-  State<StatefulWidget> createState() {
-   
-    return FacultyRouteState();
-  }
-} 
 
-class FacultyRouteState extends State<FacultyRoute> {
+class FacultyRoute extends StatelessWidget {
   Widget build(BuildContext context) {
-    
-    
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
@@ -37,9 +28,6 @@ class FacultyRouteState extends State<FacultyRoute> {
                       Text(
                         "Email ID",
                         style: TextStyle(fontSize: 30),
-                      ),
-                      TextField(
-                        
                       ),
                     ],
                   ),

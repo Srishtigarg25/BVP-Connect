@@ -1,14 +1,6 @@
 import 'package:flutter/material.dart';
 
-class StudentRoute extends StatefulWidget{
-  @override
-  State<StatefulWidget> createState() {
-    
-    return StudentRouteState();
-  }
-}
-
-class StudentRouteState extends State<StudentRoute> {
+class StudentRoute extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -36,7 +28,6 @@ class StudentRouteState extends State<StudentRoute> {
                         "Email ID",
                         style: TextStyle(fontSize: 30),
                       ),
-                      TextField(),
                     ],
                   ),
                   Row(
