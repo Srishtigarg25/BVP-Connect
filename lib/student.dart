@@ -22,28 +22,39 @@ class StudentRoute extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  Row(
-                    children: <Widget>[
-                      Text(
-                        "Email ID",
-                        style: TextStyle(fontSize: 30),
-                      ),
-                    ],
+                  Text(
+                    "Sign in to your account",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 30),
                   ),
-                  Row(
-                    children: <Widget>[
-                      Text(
-                        "Password",
-                        style: TextStyle(fontSize: 30),
-                      ),
-                    ],
+                  Container(
+                    margin: EdgeInsets.only(top: 30),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
+                        RaisedButton(
+                          child: Text("Sign in"),
+                          color: Colors.blue,
+                          onPressed: (() => Null),
+                        ),
+                        RaisedButton(
+                          child: Text("Create an account"),
+                          color: Colors.blue,
+                          onPressed: (() => Null),
+                        ),
+                      ],
+                    ),
                   ),
-                  RaisedButton(
-                    child: Text("Oops! I am not student"),
-                    color: Colors.blue,
-                    onPressed: () {
-                      Navigator.pop(context);
-                    },
+                  Container(
+                    margin: EdgeInsets.only(top: 50),
+                    child: RaisedButton(
+                      child: Text("Sorry, I am a teacher"),
+                      color: Colors.blue,
+                      onPressed: () {
+                        Navigator.pop(context, 'loginasfaculty');
+                      },
+                    ),
                   ),
                 ],
               ),
