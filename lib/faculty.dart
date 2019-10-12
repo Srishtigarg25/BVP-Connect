@@ -53,7 +53,7 @@ class FacultyRoute extends StatelessWidget {
                       child: Text("Sorry, I am student"),
                       color: Colors.blue,
                       onPressed: () {
-                        Navigator.pop(context, 'loginasstudent');
+                        Navigator.pushNamed(context, 'loginasstudent');
                       },
                     ),
                   ),

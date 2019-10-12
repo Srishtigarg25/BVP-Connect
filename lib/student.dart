@@ -52,7 +52,7 @@ class StudentRoute extends StatelessWidget {
                       child: Text("Sorry, I am a teacher"),
                       color: Colors.blue,
                       onPressed: () {
-                        Navigator.pop(context, 'loginasfaculty');
+                        Navigator.pushNamed(context, 'loginasfaculty');
                       },
                     ),
                   ),
