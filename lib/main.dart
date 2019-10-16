@@ -22,7 +22,7 @@ class BaseApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.indigo,
+        backgroundColor: Colors.purple,
         title: Container(
           width: double.infinity,
           child: Text(
@@ -50,14 +50,14 @@ class BaseApp extends StatelessWidget {
               children: <Widget>[
                 RaisedButton(
                   child: Text("Faculty"),
-                  color: Colors.blue,
+                  color: Colors.red,
                   onPressed: () {
                     Navigator.pushNamed(context, 'loginasfaculty');
                   },
                 ),
                 RaisedButton(
                   child: Text("Student"),
-                  color: Colors.blue,
+                  color: Colors.red,
                   onPressed: () {
                     Navigator.pushNamed(context, 'loginasstudent');
                   },
