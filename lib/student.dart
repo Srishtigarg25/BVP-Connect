@@ -49,7 +49,7 @@ class StudentRoute extends StatelessWidget {
                   Container(
                     margin: EdgeInsets.only(top: 50),
                     child: RaisedButton(
-                      child: Text("Sorry, I am a teacher"),
+                      child: Text("Login as faculty"),
                       color: Colors.blue,
                       onPressed: () {
                         Navigator.pushNamed(context, 'loginasfaculty');
