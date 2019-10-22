@@ -37,7 +37,9 @@ class FacultyRoute extends StatelessWidget {
                         RaisedButton(
                           child: Text("Sign in"),
                           color: Colors.blue,
-                          onPressed: (() => Null),
+                          onPressed: (() {
+                            Navigator.pushNamed(context, 'backtowelcome');
+                          }),
                         ),
                         RaisedButton(
                           child: Text("Create an account"),
@@ -49,12 +51,23 @@ class FacultyRoute extends StatelessWidget {
                   ),
                   Container(
                     margin: EdgeInsets.only(top: 50),
-                    child: RaisedButton(
-                      child: Text("Login as Student"),
-                      color: Colors.blue,
-                      onPressed: () {
-                        Navigator.pushNamed(context, 'loginasstudent');
-                      },
+                    child: Column(
+                      children: <Widget>[
+                        RaisedButton(
+                          child: Text("Login as Student"),
+                          color: Colors.blue,
+                          onPressed: () {
+                            Navigator.pushNamed(context, 'loginasstudent');
+                          },
+                        ),
+                        RaisedButton(
+                          child: Text("Back to Home Page"),
+                          color: Colors.blue,
+                          onPressed: () {
+                            Navigator.pushNamed(context, 'backtowelcome');
+                          },
+                        ),
+                      ],
                     ),
                   ),
                 ],

@@ -48,12 +48,23 @@ class StudentRoute extends StatelessWidget {
                   ),
                   Container(
                     margin: EdgeInsets.only(top: 50),
-                    child: RaisedButton(
-                      child: Text("Login as Faculty"),
-                      color: Colors.blue,
-                      onPressed: () {
-                        Navigator.pushNamed(context, 'loginasfaculty');
-                      },
+                    child: Column(
+                      children: <Widget>[
+                        RaisedButton(
+                          child: Text("Login as Faculty"),
+                          color: Colors.blue,
+                          onPressed: () {
+                            Navigator.pushNamed(context, 'loginasfaculty');
+                          },
+                        ),
+                        RaisedButton(
+                          child: Text("Back to Home Page"),
+                          color: Colors.blue,
+                          onPressed: () {
+                            Navigator.pushNamed(context, 'backtowelcome');
+                          },
+                        ),
+                      ],
                     ),
                   ),
                 ],

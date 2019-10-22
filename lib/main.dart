@@ -12,7 +12,8 @@ class MyApp extends StatelessWidget {
       home: BaseApp(),
       routes: <String, WidgetBuilder>{
         'loginasfaculty': (context) => FacultyRoute(),
-        'loginasstudent': (context) => StudentRoute()
+        'loginasstudent': (context) => StudentRoute(),
+        'backtowelcome' : (context)=> MyApp()
       },
     );
   }
