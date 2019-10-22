@@ -49,14 +49,14 @@ class BaseApp extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 RaisedButton(
-                  child: Text("teachers"),
+                  child: Text("Faculty"),
                   color: Colors.blue,
                   onPressed: () {
                     Navigator.pushNamed(context, 'loginasfaculty');
                   },
                 ),
                 RaisedButton(
-                  child: Text("children"),
+                  child: Text("Student"),
                   color: Colors.blue,
                   onPressed: () {
                     Navigator.pushNamed(context, 'loginasstudent');
