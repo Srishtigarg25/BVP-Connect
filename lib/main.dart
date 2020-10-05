@@ -50,14 +50,14 @@ class BaseApp extends StatelessWidget {
               children: <Widget>[
                 RaisedButton(
                   child: Text("teachers"),
-                  color: Colors.red,
+                  color: Colors.blue,
                   onPressed: () {
                     Navigator.pushNamed(context, 'loginasfaculty');
                   },
                 ),
                 RaisedButton(
                   child: Text("children"),
-                  color: Colors.red,
+                  color: Colors.green,
                   onPressed: () {
                     Navigator.pushNamed(context, 'loginasstudent');
                   },
