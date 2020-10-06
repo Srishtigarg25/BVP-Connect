@@ -23,7 +23,7 @@ class BaseApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.green,
         title: Container(
           width: double.infinity,
           child: Text(
@@ -37,10 +37,10 @@ class BaseApp extends StatelessWidget {
           children: <Widget>[
             Container(
               width: double.infinity,
-              margin: EdgeInsets.only(top: 200),
-              padding: EdgeInsets.only(bottom: 20),
+              margin: EdgeInsets.only(top: 210),
+              padding: EdgeInsets.only(bottom: 25),
               child: Text(
-                "Login As...",
+                "Login As....",
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 30),
               ),
@@ -58,7 +58,7 @@ class BaseApp extends StatelessWidget {
                 ),
                 RaisedButton(
                   child: Text("Student"),
-                  color: Colors.green,
+                  color: Colors.blue,
                   onPressed: () {
                     Navigator.pushNamed(context, 'loginasstudent');
                   },
